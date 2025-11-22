@@ -13,3 +13,4 @@ Alert actions:
 - Jira ticket auto-generation using prefilled URL parameters
 
 Alert definitions stored in:
+splunk/saved-searches/dns_alerts.conf
