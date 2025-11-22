@@ -1,0 +1,37 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache (if used)
+__pycache__/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore environment files
+*.env
+
+# Ignore logs that should not be public
+*.log
+*.tmp
+*.cache
+
+# Ignore Splunk internal stuff (never upload)
+etc/apps/search/local/*.conf
+etc/system/local/*.conf
+etc/users/
+var/
+splunk/
+
+# Ignore huge video files (we use links instead)
+*.mp4
+*.mov
+*.avi
+
+# Ignore zip/binary dumps
+*.tar
+*.zip
+*.gz
+
+# Ignore node_modules (if using scripts later)
+node_modules/
