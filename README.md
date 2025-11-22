@@ -67,17 +67,16 @@ This repository demonstrates **practical expertise in Blue Team operations**, de
 
 ---
 
-## 🎯 How to Use
+About This Project
 
-1. Clone the repository:
-```bash
-git clone https://github.com/Talk2Babatunde/Blue-Team-Detection-Engineering-Portfolio.git
-Explore case-study documentation to understand workflows and methodologies.
+A hands-on Blue Team portfolio showcasing DNS threat detection, Splunk dashboards, automated alerting, and incident response workflows. Includes practical detection engineering examples, sample scripts, dashboards, and demos, demonstrating ready-to-use defensive security solutions for real-world environments.
 
 Review Splunk dashboards, scripts, and demo videos for practical insights.
 
-Apply techniques in your own defensive security environment to improve detection and response.
+“Explore the repository to see all dashboards, scripts, and demos.”
 
 📞 Contact
 For collaboration or inquiries:
-Babatunde Qodri – LinkedIn | Email
+Babatunde Qodri – 
+[LinkedIn](https://www.linkedin.com/in/babatunde-qodri-27716b1a5) | [Email](mailto:babatundelaitan@gmail.com)
+
