@@ -1,0 +1,18 @@
+[
+  {
+    "Timestamp": "2025-11-22T02:30:00Z",
+    "ClientIP": "192.168.1.100",
+    "QueryName": "example.com",
+    "QueryType": "A",
+    "ResponseCode": "NOERROR",
+    "Action": "ALLOW"
+  },
+  {
+    "Timestamp": "2025-11-22T02:31:05Z",
+    "ClientIP": "192.168.1.101",
+    "QueryName": "malicious.com",
+    "QueryType": "A",
+    "ResponseCode": "NXDOMAIN",
+    "Action": "BLOCK"
+  }
+]
