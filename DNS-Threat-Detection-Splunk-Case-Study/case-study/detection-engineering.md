@@ -3,9 +3,9 @@
 This project includes multiple advanced DNS analytics:
 
 ## 1. DNS Tunneling Detection
-index=dns sourcetype=dns:log
-| where len(domain) > 50
-| stats count by src_ip domain
+     **index=dns sourcetype=dns:log
+      | where len(domain) > 50
+      | stats count by src_ip domain**
 
 <img width="967" height="586" alt="image28" src="https://github.com/user-attachments/assets/349ae4ee-86fb-4c66-a3f2-60c7b1e7da01" />
 
@@ -14,8 +14,8 @@ index=dns sourcetype=dns:log
 ## 2. NXDOMAIN Spike Detection
 
 
-index=dns sourcetype=dns:log response_code="NXDOMAIN"
-| timechart span=1h count by src_ip
+      **index=dns sourcetype=dns:log response_code="NXDOMAIN"
+      | timechart span=1h count by src_ip**
 
 <img width="989" height="556" alt="image35" src="https://github.com/user-attachments/assets/1ac759fe-dfff-4717-b4ef-58fce0e2a769" />
 
@@ -36,9 +36,9 @@ index=dns sourcetype=dns:log response_code="NXDOMAIN"
 ## 4. Beaconing Detection (>5000 queries)
 
 
-index=dns sourcetype=dns:log
-| stats count by domain
-| where count > 5000
+      **index=dns sourcetype=dns:log
+      | stats count by domain
+      | where count > 5000**
 
 <img width="958" height="440" alt="image8" src="https://github.com/user-attachments/assets/51f0e7a3-b11b-4754-a555-0afb9498e43a" />
 
@@ -47,8 +47,8 @@ index=dns sourcetype=dns:log
 ## 5. DNS Query Volume Baseline
 
 
-      index=dns sourcetype=dns:log
-      | timechart count
+     **index=dns sourcetype=dns:log
+     | timechart count**
 <img width="957" height="582" alt="image49" src="https://github.com/user-attachments/assets/808cc689-0b14-4223-9192-3a4e17a0502e" />
 
      **DNS query activity trend showing fluctuations in total DNS requests over time**
