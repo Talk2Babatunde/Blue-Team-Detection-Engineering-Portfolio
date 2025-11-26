@@ -18,6 +18,10 @@ index=dns sourcetype=dns:log
 index=dns sourcetype=dns:log response_code="NXDOMAIN"
 | timechart span=1h count by src_ip
 
+<img width="989" height="556" alt="image35" src="https://github.com/user-attachments/assets/1ac759fe-dfff-4717-b4ef-58fce0e2a769" />
+
+      **Identify hosts with frequent failed lookups — signs of DGA, misconfiguration, or beaconing**
+
 
 ## 3. Suspicious TLD Detection
 
