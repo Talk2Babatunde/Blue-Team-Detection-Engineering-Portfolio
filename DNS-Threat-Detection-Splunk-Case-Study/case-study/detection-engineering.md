@@ -26,15 +26,11 @@ index=dns sourcetype=dns:log response_code="NXDOMAIN"
 
 
      **index=dns sourcetype=dns:log
-| search domain=".xyz" OR domain=".top" OR domain="*.cn"**
+       | search domain=".xyz" OR domain=".top" OR domain="*.cn"**
 
 <img width="960" height="422" alt="image17" src="https://github.com/user-attachments/assets/3bf6c0b1-2c62-4184-85be-fe8e2bcd9ff0" />
 
      **Splunk returned no matching events, meaning there were no DNS queries to these suspicious TLDs in the dataset**
-
-
-
-
 
 
 ## 4. Beaconing Detection (>5000 queries)
@@ -51,5 +47,9 @@ index=dns sourcetype=dns:log
 ## 5. DNS Query Volume Baseline
 
 
-index=dns sourcetype=dns:log
-| timechart count
+      index=dns sourcetype=dns:log
+      | timechart count
+<img width="957" height="582" alt="image49" src="https://github.com/user-attachments/assets/808cc689-0b14-4223-9192-3a4e17a0502e" />
+
+     **DNS query activity trend showing fluctuations in total DNS requests over time**
+
