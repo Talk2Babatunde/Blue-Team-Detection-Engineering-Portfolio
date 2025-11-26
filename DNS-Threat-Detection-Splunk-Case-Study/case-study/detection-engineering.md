@@ -38,7 +38,7 @@ index=dns sourcetype=dns:log
 
 <img width="958" height="440" alt="image8" src="https://github.com/user-attachments/assets/51f0e7a3-b11b-4754-a555-0afb9498e43a" />
 
-**Splunk search for high-frequency DNS queries—no domains exceeded the 5,000 query threshold, indicating no abnormal or beaconing activity detected during the selected period**
+    ** Splunk search for high-frequency DNS queries—no domains exceeded the 5,000 query threshold, indicating no abnormal or beaconing activity detected during the selected period**
 
 ## 5. DNS Query Volume Baseline
 
