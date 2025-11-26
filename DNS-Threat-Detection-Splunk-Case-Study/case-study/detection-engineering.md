@@ -22,11 +22,19 @@ index=dns sourcetype=dns:log response_code="NXDOMAIN"
       **Identify hosts with frequent failed lookups — signs of DGA, misconfiguration, or beaconing**
 
 
-## 3. Suspicious TLD Detection
+## 3. Suspicious TLD Detection/Malware Callback Detection
 
 
-index=dns sourcetype=dns:log
-| search domain=".xyz" OR domain=".top" OR domain="*.cn"
+     **index=dns sourcetype=dns:log
+| search domain=".xyz" OR domain=".top" OR domain="*.cn"**
+
+<img width="960" height="422" alt="image17" src="https://github.com/user-attachments/assets/3bf6c0b1-2c62-4184-85be-fe8e2bcd9ff0" />
+
+     **Splunk returned no matching events, meaning there were no DNS queries to these suspicious TLDs in the dataset**
+
+
+
+
 
 
 ## 4. Beaconing Detection (>5000 queries)
