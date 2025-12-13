@@ -1,0 +1,3 @@
+index=http sourcetype=HTTP_Threat_Detection uri="/login*" status!=200
+| stats count by clientip
+| where count > 10

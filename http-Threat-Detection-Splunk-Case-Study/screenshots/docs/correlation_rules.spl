@@ -1,0 +1,8 @@
+index=http sourcetype=HTTP_Threat_Detection
+| eval is_bruteforce=if(http_method="POST" AND uri="/login" AND status!=200,1,0)
+| eval is_dirscan=if(match(user_agent,"DirBuster"),1,0)
+| eval is_unusual_method=if(http_method!="GET" AND http_method!="POST",1,0)
+| eventstats sum(is_bruteforce) as brute_total sum(is_dirscan) as dirscan_total sum(is_unusual_method) as method_flags by clientip
+| lookup threat_ip_lookup clientip OUTPUT severity threat_type
+| where brute_total>10 OR dirscan_total>5 OR method_flags>3 OR severity="high"
+| table clientip brute_total dirscan_total method_flags severity threat_type

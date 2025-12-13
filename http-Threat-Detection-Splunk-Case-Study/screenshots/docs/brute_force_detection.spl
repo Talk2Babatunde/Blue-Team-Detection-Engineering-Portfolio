@@ -1,0 +1,5 @@
+index=http sourcetype=HTTP_Threat_Detection (uri="/login*" OR uri="/wp-login*")
+| stats count(eval(status!=200)) as failed_logins, count as total_requests by clientip
+| lookup threat_ip_lookup clientip OUTPUT threat_type severity description
+| where failed_logins > 10 OR severity="high"
+| table clientip failed_logins total_requests threat_type severity description

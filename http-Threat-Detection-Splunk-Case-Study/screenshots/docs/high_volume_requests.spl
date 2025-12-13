@@ -1,0 +1,6 @@
+index=http sourcetype=HTTP_Threat_Detection
+| bin _time span=5m
+| stats count as request_count by clientip _time
+| where request_count > 1000
+| lookup threat_ip_lookup clientip OUTPUT threat_type severity description
+| table _time clientip request_count threat_type severity description

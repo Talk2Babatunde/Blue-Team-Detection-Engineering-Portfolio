@@ -1,0 +1,3 @@
+search index=http sourcetype=HTTP_Threat_Detection
+| lookup ua_blacklist user_agent OUTPUT threat_label
+| where isnotnull(threat_label)

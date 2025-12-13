@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "project": {"key": "SOC"},
+    "summary": "HTTP Threat Detected - $alert_name",
+    "description": "Suspicious activity detected from $clientip. Severity: $severity.",
+    "issuetype": {"name": "Incident"}
+  }
+}

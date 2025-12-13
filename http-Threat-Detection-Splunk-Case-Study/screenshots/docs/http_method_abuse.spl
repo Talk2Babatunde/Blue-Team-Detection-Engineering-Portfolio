@@ -1,0 +1,5 @@
+index=http sourcetype=HTTP_Threat_Detection
+| stats count by clientip http_method uri status
+| where http_method!="GET" AND http_method!="POST"
+| lookup threat_ip_lookup clientip OUTPUT threat_type severity description
+| table clientip http_method uri status threat_type severity description

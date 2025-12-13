@@ -1,0 +1,6 @@
+index=http sourcetype=HTTP_Threat_Detection
+| rex field=_raw "^(?<clientip>\d+\.\d+\.\d+\.\d+)"
+| rex field=_raw "\s+(?<http_method>GET|POST|PUT|DELETE|HEAD|OPTIONS|PATCH)\s"
+| rex field=_raw "\s+(?<uri>/\S+)"
+| rex field=_raw "\"\s(?<status>\d{3})"
+| table clientip http_method uri status

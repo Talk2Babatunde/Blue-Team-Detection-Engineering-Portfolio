@@ -1,0 +1,3 @@
+search index=http sourcetype=HTTP_Threat_Detection user_agent="*DirBuster*"
+| stats count by clientip
+| where count > 5

@@ -1,0 +1,5 @@
+index=http sourcetype=HTTP_Threat_Detection
+| stats count by user_agent clientip
+| lookup threat_ip_lookup user_agent OUTPUT threat_label
+| where isnotnull(threat_label)
+| sort -count

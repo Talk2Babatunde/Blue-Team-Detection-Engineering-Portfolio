@@ -1,0 +1,5 @@
+index=http sourcetype=HTTP_Threat_Detection status=404
+| stats count by clientip uri user_agent
+| lookup threat_ip_lookup clientip OUTPUT threat_type severity description
+| where match(user_agent, "DirBuster|Nikto|WFuzz") OR isnotnull(threat_type)
+| table clientip uri user_agent threat_type severity description

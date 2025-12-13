@@ -1,0 +1,9 @@
+Subject: HTTP Threat Detected - $alert_name$
+
+An alert has been triggered:
+IP: $clientip$
+Description: $description$
+Severity: $severity$
+Time: $time$
+
+Review dashboard and IR playbook immediately.
