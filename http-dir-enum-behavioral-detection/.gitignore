@@ -1,0 +1,24 @@
+# --- Splunk Specifics ---
+# Do not upload actual logs (keep the repo clean)
+*.log
+*.log.*
+/data/*.log
+
+# Do not upload local sensitive configs (passwords/tokens)
+etc/system/local/*
+etc/auth/*
+*.secret
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temporary Files ---
+*.tmp
+*.bak
+*.swp
+
+# --- Documentation Artifacts ---
+# If you don't want to upload large video files to GitHub (use a link instead)
+# docs/video/*.mp4
