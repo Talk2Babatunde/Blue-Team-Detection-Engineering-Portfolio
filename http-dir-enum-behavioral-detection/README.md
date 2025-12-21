@@ -168,4 +168,4 @@ The log data used in this repository is **simulated for training purposes**. All
 ## Author
 BABATUNDE QODRI
 
-**SOC Detection & Incident Response Portfolio Project**
+**SOC Analyst**
