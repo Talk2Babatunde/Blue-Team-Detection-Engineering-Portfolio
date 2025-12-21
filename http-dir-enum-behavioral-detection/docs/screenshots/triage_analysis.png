@@ -1,0 +1,2 @@
+SOC Triage Summary – Pre-Exploitation Classification
+This triage table evaluates request volume, URI diversity, HTTP methods, and response codes to determine incident severity. The activity was classified as pre-exploitation, indicating confirmed reconnaissance and authentication abuse without evidence of successful exploitation.
