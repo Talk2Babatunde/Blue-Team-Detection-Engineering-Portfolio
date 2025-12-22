@@ -1,6 +1,7 @@
 HTTP Threat Dashboard – High-Risk Source IP Overview
-This view summarizes HTTP traffic by source IP, highlighting abnormal request volume, high unique URI counts, and suspicious HTTP methods. It allows SOC analysts to quickly identify potential reconnaissance activity and prioritize investigation based on behavioral indicators.
 
+This dashboard summarizes HTTP traffic by source IP, highlighting abnormal request volume, high unique URI counts, and suspicious HTTP methods.
+It enables SOC analysts to quickly identify potential reconnaissance and pre-exploitation activity and prioritize investigations based on behavioral indicators.
 
 {
   "title": "HTTP Threat Detection – SOC Analysis Dashboard",
@@ -29,3 +30,4 @@ This view summarizes HTTP traffic by source IP, highlighting abnormal request vo
     }
   ]
 }
+
