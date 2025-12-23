@@ -108,7 +108,9 @@ Threat‑intelligence enrichment is applied to **increase confidence and reduce 
 | 192.168.202.79  | 232,259       | 1           | –                        | –        | Filtered (low recon indicators)      |
 | Others (10+)    | 6K-169K       | 0-8         | –                        | –        | **95% noise reduction**              |
 
-![Triage Dashboard]## SOC Analysis Dashboard
+
+![Triage Dashboard] 
+## SOC Analysis Dashboard
 
 This project includes a fully documented **Splunk Classic Dashboard** designed to detect:
 
