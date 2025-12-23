@@ -183,7 +183,7 @@ Each directory mirrors how detections and investigations are stored in a real SO
 
 ---
 
-## Analyst Takeaway
+## Final Take
 
 > "This project demonstrates how I detect and validate web reconnaissance using behavioral indicators, enrich alerts with threat intelligence, and correlate activity across the attack lifecycle to enable early containment before exploitation occurs."
 
