@@ -15,6 +15,8 @@ index=http sourcetype=HTTP_Threat_Detection
 | where attack_phase!="Other"
 | sort - request_count
 
+
+
 <img width="1016" height="644" alt="image3" src="https://github.com/user-attachments/assets/d8c01607-a13e-4611-bc36-daf6da91804b" />
 
 <img width="1016" height="644" alt="image13" src="https://github.com/user-attachments/assets/d03ab816-2845-4836-9ac0-879f7f53712f" />
@@ -25,5 +27,6 @@ index=http sourcetype=HTTP_Threat_Detection
 
 
 <img width="1007" height="356" alt="image9" src="https://github.com/user-attachments/assets/f463bf21-447d-4016-9058-154003142c89" />
+
 
 
