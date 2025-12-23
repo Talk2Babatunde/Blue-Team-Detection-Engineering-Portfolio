@@ -108,7 +108,17 @@ Threat‑intelligence enrichment is applied to **increase confidence and reduce 
 | 192.168.202.79  | 232,259       | 1           | –                        | –        | Filtered (low recon indicators)      |
 | Others (10+)    | 6K-169K       | 0-8         | –                        | –        | **95% noise reduction**              |
 
-![Triage Dashboard](docs/screenshots/triage_analysis.png)
+![Triage Dashboard]## SOC Analysis Dashboard
+
+This project includes a fully documented **Splunk Classic Dashboard** designed to detect:
+
+- HTTP reconnaissance (HEAD / GET enumeration)
+- Follow-on attack behavior
+- SOC triage decision-making
+
+**[View Full Dashboard Report (PDF)](https://1drv.ms/b/c/b3322d5b87e2e949/IQCo_AN8AlDOSqL-mjCIZJhlAU4aaxjZfVVUidlu-LKICss?e=BA3XE8)** 
+
+
 
 **SOC Impact**: Caught T1083 (recon) → T1110 (brute-force) | No exploitation observed
 
