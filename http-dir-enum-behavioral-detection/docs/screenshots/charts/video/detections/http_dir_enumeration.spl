@@ -1,0 +1,3 @@
+index=http sourcetype=HTTP_Threat_Detection
+| stats count as total_requests dc(uri) as unique_uris values(status) as status_codes by clientip
+| where unique_uris > 30 AND total_requests > 50
