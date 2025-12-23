@@ -96,6 +96,24 @@ Threat‑intelligence enrichment is applied to **increase confidence and reduce 
 
 ---
 
+
+## Live Detection Results 
+
+**Real Splunk Output: DirBuster Recon + Brute-Force Caught**
+
+| Client IP       | Total Requests | Unique URIs | Threat Type              | Severity | Description                          |
+|-----------------|----------------|-------------|--------------------------|----------|--------------------------------------|
+| **192.168.203.63** | **1,284,536** | **0**       | **dirbuster_scan**       | **High** | **DirBuster scanning 1.28M paths**   |
+| **192.168.202.102** | **212,234**  | **1**       | **suspicious_login_activity** | **Medium** | **212K POST /login attempts** |
+| 192.168.202.79  | 232,259       | 1           | –                        | –        | Filtered (low recon indicators)      |
+| Others (10+)    | 6K-169K       | 0-8         | –                        | –        | **95% noise reduction**              |
+
+![Triage Dashboard](docs/screenshots/triage_analysis.png)
+
+**SOC Impact**: Caught T1083 (recon) → T1110 (brute-force) | No exploitation observed
+
+---
+
 ## Incident Response Playbook
 
 This repository includes a **SOC Incident Response Playbook** for HTTP reconnaissance:
