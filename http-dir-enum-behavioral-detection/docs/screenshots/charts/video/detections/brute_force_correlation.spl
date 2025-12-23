@@ -1,0 +1,10 @@
+index=http sourcetype=HTTP_Threat_Detection
+| rex field=_raw "^(?<clientip>\d{1,3}(?:\.\d{1,3}){3})"
+| rex field=_raw "\s(?<http_method>POST)\s"
+| rex field=_raw "\s(?<uri>/login[^\s]*|/wp-login[^\s]*)"
+| rex field=_raw "\s(?<status>\d{3})\s"
+| stats count(eval(status!=200)) as failed_logins,
+        count as total_attempts
+        by clientip uri
+| where failed_logins > 10
+| sort - failed_logins
