@@ -21,5 +21,8 @@ index=http sourcetype=HTTP_Threat_Detection
 
 <img width="1010" height="351" alt="image17" src="https://github.com/user-attachments/assets/d04056e7-f308-4e3f-925b-57896f4e8871" />
 
+<img width="1007" height="392" alt="image1" src="https://github.com/user-attachments/assets/1a6b910c-46b1-4fa0-a621-245239ca56c6" />
+
+
 
 
