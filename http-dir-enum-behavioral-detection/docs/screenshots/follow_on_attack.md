@@ -15,7 +15,7 @@ index=http sourcetype=HTTP_Threat_Detection
 | where attack_phase!="Other"
 | sort - request_count
 
-follow_on_attack_recon_to_authentication.
+## Follow_on_attack_recon_to_authentication.
 
 <img width="1016" height="644" alt="image3" src="https://github.com/user-attachments/assets/d8c01607-a13e-4611-bc36-daf6da91804b" />
 
@@ -27,6 +27,7 @@ follow_on_attack_recon_to_authentication.
 
 
 <img width="1007" height="356" alt="image9" src="https://github.com/user-attachments/assets/f463bf21-447d-4016-9058-154003142c89" />
+
 
 
 
