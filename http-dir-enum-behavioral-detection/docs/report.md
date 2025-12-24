@@ -18,6 +18,8 @@
 ## 📄 Full Triage Report
 **Click the link below to view or download the complete technical analysis:**
 
-👉 [**View Full Directory Enumeration Triage Report (PDF)**](./Directory_Enumeration_Triage_Report.pdf)
+👉 [**View Full Directory Enumeration Triage Report (PDF)**][Directory Enumeration Triage Report.pdf](https://github.com/user-attachments/files/24320020/Directory.Enumeration.Triage.Report.pdf)
 
 ---
+
+
