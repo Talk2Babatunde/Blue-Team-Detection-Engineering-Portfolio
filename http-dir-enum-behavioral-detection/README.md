@@ -194,7 +194,7 @@ Each directory mirrors how detections and investigations are stored in a real SO
 The log data used in this repository is **simulated for training purposes**. All detection logic, analysis methodology, and incident response decisions reflect **real‑world SOC practices**.
 
 ---
-Read Full Report: 📄 Full Report: [HTTP Threat Detection Report (PDF)]([reports/HTTP_Threat_Detection_Report.pdf](url))
+Read Full Report: 📄: [HTTP Threat Detection Report (PDF)]([reports/HTTP_Threat_Detection_Report.pdf](url))
 
 
 ## Author
